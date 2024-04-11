@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A912132E2BC4DF6F007DC6FC /* heart_rate_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A912132D2BC4DF6F007DC6FC /* heart_rate_data.json */; };
+		A91213302BC4E2F2007DC6FC /* heart_rate_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = A912132F2BC4E2F2007DC6FC /* heart_rate_data.csv */; };
+		A91213352BC4E6C7007DC6FC /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = A91213342BC4E6C7007DC6FC /* SwiftCSV */; };
 		A93578712BBBCDDF00EB3F5D /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A93578702BBBCDDF00EB3F5D /* RealityKitContent */; };
 		A93578732BBBCDDF00EB3F5D /* graphTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93578722BBBCDDF00EB3F5D /* graphTestApp.swift */; };
 		A93578752BBBCDDF00EB3F5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93578742BBBCDDF00EB3F5D /* ContentView.swift */; };
 		A93578772BBBCDE100EB3F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93578762BBBCDE100EB3F5D /* Assets.xcassets */; };
 		A935787A2BBBCDE100EB3F5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93578792BBBCDE100EB3F5D /* Preview Assets.xcassets */; };
+		A93578832BBBD01300EB3F5D /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = A93578822BBBD01300EB3F5D /* Collections */; };
+		A93578852BBBD01300EB3F5D /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = A93578842BBBD01300EB3F5D /* DequeModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A912132D2BC4DF6F007DC6FC /* heart_rate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heart_rate_data.json; path = ../../Vals/heart_rate_data.json; sourceTree = "<group>"; };
+		A912132F2BC4E2F2007DC6FC /* heart_rate_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = heart_rate_data.csv; path = ../../Vals/heart_rate_data.csv; sourceTree = "<group>"; };
 		A935786B2BBBCDDF00EB3F5D /* graphTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = graphTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A935786F2BBBCDDF00EB3F5D /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		A93578722BBBCDDF00EB3F5D /* graphTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphTestApp.swift; sourceTree = "<group>"; };
@@ -29,7 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93578832BBBD01300EB3F5D /* Collections in Frameworks */,
+				A91213352BC4E6C7007DC6FC /* SwiftCSV in Frameworks */,
 				A93578712BBBCDDF00EB3F5D /* RealityKitContent in Frameworks */,
+				A93578852BBBD01300EB3F5D /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 		A935786D2BBBCDDF00EB3F5D /* graphTest */ = {
 			isa = PBXGroup;
 			children = (
+				A912132F2BC4E2F2007DC6FC /* heart_rate_data.csv */,
+				A912132D2BC4DF6F007DC6FC /* heart_rate_data.json */,
 				A93578722BBBCDDF00EB3F5D /* graphTestApp.swift */,
 				A93578742BBBCDDF00EB3F5D /* ContentView.swift */,
 				A93578762BBBCDE100EB3F5D /* Assets.xcassets */,
@@ -99,6 +111,9 @@
 			name = graphTest;
 			packageProductDependencies = (
 				A93578702BBBCDDF00EB3F5D /* RealityKitContent */,
+				A93578822BBBD01300EB3F5D /* Collections */,
+				A93578842BBBD01300EB3F5D /* DequeModule */,
+				A91213342BC4E6C7007DC6FC /* SwiftCSV */,
 			);
 			productName = graphTest;
 			productReference = A935786B2BBBCDDF00EB3F5D /* graphTest.app */;
@@ -128,6 +143,10 @@
 				Base,
 			);
 			mainGroup = A93578622BBBCDDF00EB3F5D;
+			packageReferences = (
+				A93578812BBBD01200EB3F5D /* XCRemoteSwiftPackageReference "swift-collections" */,
+				A91213332BC4E6C6007DC6FC /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = A935786C2BBBCDDF00EB3F5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A912132E2BC4DF6F007DC6FC /* heart_rate_data.json in Resources */,
+				A91213302BC4E2F2007DC6FC /* heart_rate_data.csv in Resources */,
 				A935787A2BBBCDE100EB3F5D /* Preview Assets.xcassets in Resources */,
 				A93578772BBBCDE100EB3F5D /* Assets.xcassets in Resources */,
 			);
@@ -356,10 +377,44 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A91213332BC4E6C6007DC6FC /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+		A93578812BBBD01200EB3F5D /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		A91213342BC4E6C7007DC6FC /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A91213332BC4E6C6007DC6FC /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
 		A93578702BBBCDDF00EB3F5D /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		A93578822BBBD01300EB3F5D /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A93578812BBBD01200EB3F5D /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		A93578842BBBD01300EB3F5D /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A93578812BBBD01200EB3F5D /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
